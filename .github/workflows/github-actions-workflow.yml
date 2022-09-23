@@ -49,7 +49,7 @@ jobs:
     - run: echo " The job's status is ${{ job.status }}"
     
   Second-Job:
-    name:The seconf job running on another runner
+    name: The seconf job running on another runner
     runs-on: windows-latest
     needs: Example-Actions-Job
     steps:
