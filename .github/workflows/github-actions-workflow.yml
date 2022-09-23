@@ -1,5 +1,5 @@
 name: Github Actions Demo
-on: [push, pull-request]
+on: [push, pull_request]
 jobs:
   Example-Actions-Job:
     name: Exploring Github Actions
