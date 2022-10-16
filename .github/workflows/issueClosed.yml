@@ -1,0 +1,11 @@
+on:
+  issues:
+    types: [closed]
+jobs:
+  validate:
+    name: Validate Issue
+    if: true
+    runs-on: ubuntu-latest
+    steps: 
+      - run: |
+          echo "Now running something"
