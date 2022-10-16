@@ -1,11 +1,14 @@
+name: "Bypass Scan Failure Approval Issues Closed"
 on:
   issues:
     types: [closed]
 jobs:
   validate:
     name: Validate Issue
-    if: true
+    if: ${{ github.event.issues.label.name == 'bug' }}
     runs-on: ubuntu-latest
     steps: 
       - run: |
           echo "Now running something"
+          
+          
