@@ -5,7 +5,7 @@ on:
 jobs:
   validate:
     name: Validate Issue
-    if: ${{ github.event.issues.label.name == 'bug' }}
+    if: ${{ github.event.label.name == 'bug' }}
     runs-on: ubuntu-latest
     steps: 
       - run: |
