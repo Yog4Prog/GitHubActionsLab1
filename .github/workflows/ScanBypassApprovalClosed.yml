@@ -3,6 +3,16 @@ on:
   issues:
     types: [closed]
 jobs:
+  check:
+    name: Checking Values
+    runs-on: ubuntu-latest
+    steps: 
+      - run: |
+          echo "${{ github.event.label.name }}"
+          echo "${{ github.event.issue.labels.name }}"
+          echo "${{ github.event.issue.labels.*.name }}"
+          echo "${{ github.event.issue }}"
+
   validate:
     name: Validate Issue
     if: contains(github.event.issues.labels.*.name, 'bug')
