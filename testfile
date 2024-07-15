@@ -1,1 +1,3 @@
 # this is a file for testng Github actions
+USER_NAME="TeST"
+PASSWORD="pass@123$au#txt"
